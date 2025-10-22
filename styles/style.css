@@ -1,18 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-
 * {
   margin: 0px;
   padding: 0px;
 }
-
 .quicksand-regular {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
-
 /* Navbar Style */
-
+hr {
+  display: none;
+}
 .nav {
   display: flex;
   width: 80.5vw;
@@ -88,8 +87,7 @@
 .nav-3 > button {
   /* Frame 2 */
   width: 157px;
-  height: 42px;
-  /* Auto layout */
+  height: 42px; /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -102,9 +100,7 @@
 }
 .nav-3 > i {
   display: none;
-}
-
-/* Banner Style */
+} /* Banner Style */
 .banner-container {
   width: 80.5vw;
   margin: 10vh auto;
@@ -130,7 +126,6 @@
 }
 .banner-description > p {
   color: rgba(17, 17, 17, 1);
-
   font-family: Quicksand;
   font-size: 16px;
   font-weight: 300;
@@ -142,8 +137,7 @@
 .banner-description > button {
   /* Frame 3 */
   width: 197px;
-  height: 50px;
-  /* Auto layout */
+  height: 50px; /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -154,15 +148,114 @@
   border: none;
   border-radius: 12px;
   background: var(--Black, rgba(17, 17, 17, 1));
+} /* Standard Style */
+.standard {
+  width: 80.5vw;
+  margin: 3vh auto;
+  background-image: url("../assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
+.standard-title {
+  color: rgba(0, 0, 0, 1);
+  font-family: Quicksand;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 57.5px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.card-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 80px;
+}
+.card-1 {
+  box-sizing: border-box;
+  border: 0.94px solid rgba(222, 245, 255, 1);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.29578971862793px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+    180deg,
+    rgba(222, 245, 255, 1),
+    rgba(255, 255, 255, 0) 30%
+  );
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.card-2 {
+  box-sizing: border-box;
+  border: 0.94px solid rgba(255, 244, 220, 1);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.29578971862793px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 244, 220, 1),
+    rgba(255, 255, 255, 1) 40%
+  );
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.card-3 {
+  box-sizing: border-box;
+  border: 0.94px solid rgba(222, 245, 255, 1);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.29578971862793px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgba(238, 225, 255, 1),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgba(255, 255, 255, 1);
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.card-1,
+.card-2,
+.card-3 {
+  color: rgba(128, 128, 128, 1);
+  font-family: Raleway;
+  font-size: 15.09px;
+  font-weight: 500;
+  line-height: 28.3px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.card-1,
+.card-2,
+.card-3 > h4 {
+  color: rgba(32, 32, 32, 1);
+}
+.card-1 > h5 {
+  color: #64c8ff;
+}
+.card-2 > h5 {
+  color: #f0aa00;
+}
+.card-3 > h5 {
+  color: #8700ff;
+} /* Mobile Responsive */
 /* Mobile Responsive */
 @media screen and (max-width: 576px) {
   /* Navbar style */
-  header {
+  hr {
+    display: block;
+    width: 115%;
     border: 0.5px solid var(--Orange, rgba(254, 163, 1, 1));
   }
-
   .nav-1 > h3 {
     display: none;
   }
@@ -177,21 +270,26 @@
   /* Banner Style */
   .banner-container {
     flex-direction: column-reverse;
-    
   }
-  .banner-description{
-    
+  .banner-description {
+  }
+  .banner-description > h3 {
+    font-size: 28px;
 
-  }
-  .banner-description>h3{
-    font-size: 34px;
     text-align: center;
   }
-  .banner-description>p{
+  .banner-description > p {
     text-align: center;
-    
   }
-  .banner-description>button{
-    margin:0px auto;
+  .banner-description > button {
+    margin: 0px auto;
+  }
+  /* Standard */
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .standard-title > h3 {
+    font-size: 28px;
   }
 }
