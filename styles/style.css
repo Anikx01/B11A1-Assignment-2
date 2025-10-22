@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.quicksand-regular {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Navbar Style */
+
+.nav {
+  display: flex;
+  width: 80.5vw;
+  height: 7vh;
+  margin: 3vh auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.nav-1 > h3 {
+  color: var(--Black, rgba(17, 17, 17, 1));
+  font-family: Quicksand;
+  font-size: 25.5px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.nav-2 > ul {
+  display: flex;
+  gap: 32px;
+}
+.nav-2 > ul > li > a {
+  text-decoration: none;
+}
+.nav-2 > ul > li {
+  list-style: none;
+}
+.a-1 {
+  color: var(--Orange, rgba(254, 163, 1, 1));
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.a-2 {
+  color: var(--Sky Blue, rgba(1, 172, 253, 1));
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.a-3 {
+  color: rgba(5, 212, 223, 1);
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.a-4 {
+  color: rgba(93, 88, 239, 1);
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.nav-3 {
+  display: flex;
+  align-items: center;
+}
+.nav-3 > button {
+  /* Frame 2 */
+  width: 157px;
+  height: 42px;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background: var(--Orange, rgba(254, 163, 1, 1));
+}
+.nav-3 > i {
+  display: none;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 576px) {
+  /* Navbar style */
+   header {
+    box-sizing: border-box;
+    border: 0.5px solid var(--Orange, rgba(254, 163, 1, 1));
+  }
+
+  .nav-1 > h3 {
+    display: none;
+  }
+  .nav-2 > ul,
+  .nav-3 > button {
+    display: none;
+  }
+  .nav-3 > i {
+    display: block;
+  }
+}
